@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Phishing Links Scanner</title>
+    <meta content="Discord Phishing Links Scanner" property="og:title" />
+    <meta content="A simple malicious link detector for discord." property="og:description">
+    <meta content="https://dpls.vercel.app" property="og:url" />
+    <meta content="#7289da" data-react-helmet="true" name="theme-color" />
+    <link rel="shortcut icon" type="image/png" href="images/discord2.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/discord.png" class="logo">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="country-inp"
+          placeholder="Enter a url to be scanned..."
+        />
+        <button id="search-btn">Scan Url</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
