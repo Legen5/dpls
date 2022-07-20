@@ -14855,7 +14855,10 @@ scanBtn.addEventListener("click", () => {
     return result.innerHTML = `<h4>For better analysis, enter only the url of the site, ex: google.com</h4>`;
   } else if(!linktest.includes(".")) {
     return result.innerHTML = `<h4>Please enter a valid link</h4>`;
+  } else if(/[A-Z]/.test(linktest)) {
+    return result.innerHTML = `<h4>Capital letters are not allowed</h4>`;
   }
+
   scanBtn.innerHTML = "Scanning..."
   setTimeout(function() {
   scanBtn.innerHTML = "Scan Url"
