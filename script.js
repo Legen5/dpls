@@ -1,8 +1,7 @@
 let scanBtn = document.getElementById("search-btn");
 let linkvalue = document.getElementById("country-inp");
 
-{
-  "domains": [
+let domainsList = [
     "101nitro.com",
     "1month-premium.com",
     "1nitro.club",
@@ -16012,7 +16011,6 @@ let linkvalue = document.getElementById("country-inp");
     "zipsetgo.com",
     "zipsetgod.com"
   ]
-}
 
 scanBtn.addEventListener("click", () => {
   let linktest = linkvalue.value;
